@@ -2,6 +2,8 @@ import Navbar from '../../components/Navbar/Navbar'
 import './Home.css'
 import heroBanner from '../../assets/hero_banner.jpg'
 import heroTitle from '../../assets/hero_title.png'
+import playIcon from '../../assets/play_icon.png'
+import infoIcon from '../../assets/info_icon.png'
 
 const Home = () => {
   return (
@@ -16,6 +18,16 @@ const Home = () => {
             in modern Istanbul embarks on a quest to save the city from an
             immortal enemy.
           </p>
+          <div className="hero-btns">
+            <button className="btn">
+              <img src={playIcon} alt="" />
+              Play
+            </button>
+            <button className="btn dark-btn">
+              <img src={infoIcon} alt="" />
+              More Info
+            </button>
+          </div>
         </div>
       </div>
     </div>
