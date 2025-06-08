@@ -1,5 +1,6 @@
+import data from '../../assets/cards/Cards_data'
 import './TitleCards.css'
-const TitleCards = () => {
-  return <div>TitleCards</div>
-}
+import { useEffect, useRef } from 'react'
+
+const TitleCards = () => {}
 export default TitleCards
