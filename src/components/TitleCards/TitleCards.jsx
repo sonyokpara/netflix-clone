@@ -1,8 +1,9 @@
 import data from '../../assets/cards/Cards_data'
+import Card from './Card'
 import './TitleCards.css'
 import { useEffect, useRef } from 'react'
 
-const TitleCards = () => {
+const TitleCards = ({ title, category }) => {
   const cardsRef = useRef()
 
   const handleWheel = (e) => {
@@ -16,15 +17,10 @@ const TitleCards = () => {
 
   return (
     <div className="title-cards">
-      <h2>Popular on Netflix</h2>
+      <h2>{title ? title : 'Popular on Netflix'}</h2>
       <div className="card-list" ref={cardsRef}>
         {data.map((card, index) => {
-          return (
-            <div className="card" key={index}>
-              <img src={card.image} alt="" />
-              <p>{card.name}</p>
-            </div>
-          )
+          return <Card image={card.image} name={card.name} key={index} />
         })}
       </div>
     </div>
