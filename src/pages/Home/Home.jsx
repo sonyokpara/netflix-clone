@@ -29,6 +29,7 @@ const Home = () => {
               More Info
             </button>
           </div>
+          <TitleCards />
         </div>
       </div>
     </div>
