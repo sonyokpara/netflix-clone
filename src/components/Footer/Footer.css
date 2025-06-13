@@ -25,7 +25,7 @@
 .footer li {
   cursor: pointer;
 }
-.footer p {
+.copyright-text {
   color: gray;
   font-size: 14px;
 }
